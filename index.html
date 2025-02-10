@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <h1 id="demo">0</h1>
+    <button onclick="CounterPlus()"><i class="fa-solid fa-plus"></i></button>
+    <button onclick="CounterMins()"><i class="fa-solid fa-minus"></i></button>
+    <button onclick="CounterReset()"><i class="fa-solid fa-xmark"></i></button>
+  </body>
+  <script>
+    let Count = 0;
+    function CounterPlus(params) {
+      Count += 1;
+      document.getElementById("demo").innerHTML = Count;
+    }
+    function CounterMins(params) {
+      if (Count > 0) {
+        Count -= 1;
+        document.getElementById("demo").innerHTML = Count;
+      }
+    }
+    function CounterReset(params) {
+      Count = 0;
+      document.getElementById("demo").innerHTML = Count;
+    }
+    // console.log(document);
+
+    // setInterval(function Hm(params) {
+    //   console.log("hello");
+    // }, 3000);
+  </script>
+</html>
+<!--  boilplat code -->
